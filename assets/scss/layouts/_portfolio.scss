@@ -1,0 +1,99 @@
+.portfolio {
+  &__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__item:hover &__overlay {
+    opacity: 0.5;
+    visibility: visible;
+  }
+  &__item:hover &__icon {
+    opacity: 1;
+    transform: translate(0%, 0%);
+  }
+  &__item:hover &__text {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  &__item:hover &__overlay::before {
+    left: 100%;
+  }
+  &__img {
+    width: 100%;
+    img {
+      width: inherit;
+      border-radius: inherit;
+      object-fit: cover;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.5s;
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: block;
+      background: $gradient-overlay;
+      transform: skewX(-25deg);
+      transition: all linear 0.5s;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 28px;
+    background-image: linear-gradient(
+      90deg,
+      #f55f8d 0,
+      #f8ae56 51%,
+      #f55f8d 100%
+    );
+    background-size: 200%;
+    border-radius: 8px;
+    z-index: 2;
+    opacity: 0;
+    transform: translate(200%, -200%);
+    transition: all ease-in-out 0.5s;
+  }
+  &__text {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: white;
+    line-height: 1.5;
+    &-title {
+      font-family: $secondary-font;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    &-decs {
+      opacity: 0.7;
+      font-size: 1.6rem;
+    }
+    opacity: 0;
+    transform: translateY(200%);
+    transition: all linear 0.5s;
+  }
+}

@@ -1,0 +1,27 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  background-image: $gradient;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: transparent;
+  background-size: 200%;
+  transition: all linear 0.3s;
+
+  &:hover {
+    background-position: right;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .btn {
+    padding: 20px 35px;
+    font-size: 1.5rem;
+    line-height: 18px;
+  }
+}

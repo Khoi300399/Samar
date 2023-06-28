@@ -1,0 +1,36 @@
+section.portfolio.section 
+    div.container
+        +headingCenter("Portfolio","Our Latest Work")
+        div.row#lightgallery
+            div.col-lg-7.col-md-7.col-sm-12.mb-5
+                div.portfolio__item.item1
+                    div.portfolio__img
+                        img(src="./assets/image/port1.jpg", alt="image_1")
+                    +portfolioOverlay("/assets/image/port1.jpg")
+            div.col-lg-5.col-md-5.col-sm-12.mb-5
+                div.portfolio__item.item2
+                    div.portfolio__img
+                        img(src="./assets/image/port2.jpg", alt="image_2")
+                    +portfolioOverlay("./assets/image/port2.jpg")
+            div.col-lg-7.col-md-12.col-sm-12
+                div.row
+                    div.col-lg-6.col-md-6.col-sm-12.mb-5
+                        div.portfolio__item.item3
+                            div.portfolio__img
+                                img(src="./assets/image/port3.jpg", alt="image_3")
+                            +portfolioOverlay("./assets/image/port3.jpg")
+                    div.col-lg-6.col-md-6.col-sm-12.mb-5
+                        div.portfolio__item.item4
+                            div.portfolio__img
+                                img(src="./assets/image/port4.jpg", alt="image_4")
+                            +portfolioOverlay("./assets/image/port4.jpg")
+                    div.col-lg-12.col-md-12.col-sm-12.mb-5
+                        div.portfolio__item.item5
+                            div.portfolio__img
+                                img(src="./assets/image/port5.jpg", alt="image_5")
+                            +portfolioOverlay("./assets/image/port5.jpg")
+            div.col-lg-5.col-md-12.col-sm-12.mb-5
+                div.portfolio__item.item6
+                    div.portfolio__img
+                        img(src="./assets/image/port6.jpg", alt="image_6")
+                    +portfolioOverlay("./assets/image/port6.jpg")

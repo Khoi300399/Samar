@@ -1,0 +1,116 @@
+.banner {
+  background-image: url("/assets/image/pic2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+  padding-top: 120px;
+  &-top {
+    margin-bottom: 30px;
+  }
+  &__list {
+    margin-bottom: 20px;
+  }
+  &__item {
+    list-style: none;
+    padding: 10px 5px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__icon {
+    width: 35px;
+    height: 35px;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-image: $gradient-hover;
+    color: white;
+  }
+  &__text {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: $secondary-color;
+  }
+
+  &-bottom {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  &__extra {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: roteMove 5s infinite;
+    img {
+      transform: scale(1.4);
+    }
+  }
+}
+@keyframes roteMove {
+  0% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .banner {
+    &-bottom {
+      width: 60%;
+    }
+    &-top {
+      width: 510px;
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .banner {
+    &-top {
+      width: 690px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .banner {
+    padding-top: 180px;
+    .content {
+      display: flex;
+      align-items: center;
+    }
+    &-bottom {
+      width: 35%;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner {
+    &-top {
+      width: 70%;
+    }
+    &-bottom {
+      width: 45%;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+  }
+}

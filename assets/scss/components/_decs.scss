@@ -1,0 +1,15 @@
+.decs {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: normal;
+  color: $secondary-color;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .decs {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+}

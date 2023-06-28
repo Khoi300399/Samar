@@ -1,0 +1,231 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  min-height: 75px;
+  z-index: 10;
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .nav {
+    transition: transform linear 0.4s;
+    display: none;
+    &__link.active,
+    &__link:hover {
+      color: $hover-color;
+    }
+  }
+
+  .nav__link:hover .nav__text {
+    animation: UpToDown 0.3s forwards;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    width: 280px;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: transform linear 0.4s;
+    &__header {
+      padding: 25px 20px;
+      &-logo {
+        width: 160px;
+      }
+    }
+  }
+  .sidebar__nav {
+    padding-inline: 20px;
+  }
+  .menu {
+    &__item {
+      list-style: none;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      text-decoration: none;
+      color: $primary-color;
+      transition: all 0.3s;
+    }
+
+    &__icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $hover-color;
+      color: white;
+      border-radius: 5px;
+    }
+    &__item.active,
+    &__item:hover {
+      color: $hover-color;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $secondary-color;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.4s;
+  }
+  &__close {
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: none;
+  }
+  &__toggle {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.2s;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  #header__toggle {
+    display: none;
+  }
+  #header__toggle:checked ~ .header__close {
+    display: block;
+  }
+  #header__toggle:checked ~ .header__overlay {
+    opacity: 0.4;
+    visibility: visible;
+  }
+  #header__toggle:checked ~ .sidebar {
+    transform: translateX(0%);
+  }
+  #header__toggle:checked ~ .header__toggle {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes UpToDown {
+  45% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  55% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .header {
+    .btn {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 991px) {
+  .header {
+    min-height: 90px;
+    padding: 0 39px;
+    .container {
+      justify-content: stretch;
+    }
+    .logo {
+      width: 130px;
+    }
+
+    &__close {
+      top: 30px;
+      right: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    .body {
+      min-height: 130px;
+    }
+    .logo {
+      width: 170px;
+    }
+    .nav {
+      display: block;
+      margin-left: auto;
+      &__list {
+        display: flex;
+      }
+      &__item {
+        list-style: none;
+      }
+      &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $primary-color;
+        padding: 56px 15px;
+        text-decoration: none;
+
+        i {
+          font-size: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .btn {
+      margin: 0 0 0 20px;
+    }
+    &__toggle {
+      display: none;
+    }
+  }
+}

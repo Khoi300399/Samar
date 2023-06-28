@@ -1,0 +1,11 @@
+section.plan.section 
+    div.container
+        +headingCenter("Choose Your Plan","Choose Your Plan")
+        input(type="checkbox" id="toggle" class="toggle" hidden)
+        label.plan__toggle.mx-auto(for="toggle")
+            span.toggle-left Monthly
+            span.toggle-right Yearly
+        div.plan__menu.row.justify-content-center
+            +planItem ("Basic Plan","./assets/image/pic1_3.jpg","$49")
+            +planItem ("Standart Plan","./assets/image/pic5_1.jpg","$99")
+            +planItem ("Premium Plan","./assets/image/pic6_1.jpg","$149")

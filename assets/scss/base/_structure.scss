@@ -1,0 +1,16 @@
+.section {
+  padding-top: 50px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section {
+    padding-top: 115px;
+    padding-bottom: 85px;
+  }
+}

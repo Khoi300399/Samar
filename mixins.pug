@@ -1,0 +1,119 @@
+mixin headingCenter(heading,title)
+    h6.heading.heading-center= heading
+    h2.title.title-center= title
+mixin heading(heading,title)
+    h6.heading= heading
+    h2.title= title
+
+mixin servicesItem(img,title,decs)
+    article.services__item 
+        figure.services__item--img
+            img(src= img, alt="...")
+        h3.services__item--title= title
+        p.services__item--decs= decs
+
+mixin numberItem(icon,counter,text,statistic)
+    article.number__item 
+        span.number__icon
+            i(class= icon)
+        div.number__counter
+            span.number__counter--digital.counter= counter
+            span.number__counter--text= text 
+        p.number__statistic= statistic
+
+mixin featuresItem(icon,subject,decs)
+    div.features__item
+        div.features__item-left
+            span.features__icon
+                i(class= icon)
+        div.features__item-right
+            h3.features__subject= subject
+            p.features__decs= decs 
+
+mixin portfolioOverlay(image)
+    div.portfolio__overlay
+    a.portfolio__icon(href= image,data-lg-size="1000-600")
+        i.la.la-plus
+    span.portfolio__text
+        h5.portfolio__text-title Software Landing
+        p.portfolio__text-decs By Jhone Doe
+
+mixin planItem(title,img,price)
+    div.col-lg-4.col-md-6
+        article.plan__item 
+            h3.plan__title= title
+            figure.plan__img 
+                img(src= img, alt="plan_1")
+            h5.plan__price= price
+                small /Month
+            ul.plan__list
+                li.plan__list-item
+                    span.plan__list-icon
+                        i.fa-solid.fa-check
+
+                    span.plan__list-text Graphic Design 
+                li.plan__list-item
+                    span.plan__list-icon
+                        i.fa-solid.fa-check
+
+                    span.plan__list-text Web Design
+                li.plan__list-item
+                    span.plan__list-icon
+                        i.fa-solid.fa-check
+
+                    span.plan__list-text UI/UX
+                li.plan__list-item
+                    span.plan__list-icon
+                        i.fa-solid.fa-check
+
+                    span.plan__list-text HTML/CSS
+                li.plan__list-item
+                    sspan.plan__list-icon
+                        i.fa-solid.fa-check
+
+                    span.plan__list-text SEO Marketing
+                li.plan__list-item
+                    span.plan__list-icon
+                        i.fa-solid.fa-check
+
+                    span.plan__list-text Business Analysis
+            div.plan__footer
+                a.btn(href="#!") Start now 
+
+mixin clientsItem(image)
+    div.swiper-slide    
+        div.clients__item
+            div.clients__pic
+                img(src= image, alt="...")
+                div.clients__extra
+mixin articlesItem(name,position,text)
+    article.swiper-slide     
+        div.articles__item
+            div.articles__content
+                h3.articles__name= name
+                span.articles__position
+                    i= position
+                p.articles__text= text
+
+mixin blogsItem(image,title,decs,date,author)
+    article.blogs__item 
+        figure.blogs__img 
+            img(src= image, alt="...")
+        div.blogs__info
+            h3.blogs__title= title
+            p.decs= decs
+            ul.blogs__meta 
+                li.blogs__meta-date= date
+                li.blogs__meta-author
+                    i.las.la-user-circle
+                    p
+                        span By 
+                        = author
+
+mixin logoItem(img1,img2)
+    div.brand__item
+        div.logo-container
+            img(src= img1, alt="..." class="logo-main")
+            img(src= img2, alt="..." class="logo-hover")
+
+
