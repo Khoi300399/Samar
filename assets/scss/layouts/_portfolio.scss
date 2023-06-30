@@ -40,8 +40,7 @@
 
     &::before {
       content: "";
-      width: 50%;
-      height: 100%;
+      @include size(50%, 100%);
       position: absolute;
       top: 0;
       left: -100%;
@@ -55,12 +54,8 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white !important;
+    @include size(50px);
+    @include flexBox(center, center);
     text-decoration: none !important;
     font-size: 28px;
     background-image: linear-gradient(
@@ -75,6 +70,9 @@
     opacity: 0;
     transform: translate(200%, -200%);
     transition: all ease-in-out 0.5s;
+    a {
+      color: white !important;
+    }
   }
   &__text {
     position: absolute;

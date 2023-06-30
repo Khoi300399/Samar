@@ -25,24 +25,22 @@
   }
 
   &__icon {
-    width: 65px;
-    height: 65px;
+    @include size(65px);
+    @include text(6.5rem, 100, $hover-color);
+
     font-size: 65px;
     color: $hover-color;
     font-weight: 100;
     transition: all linear 0.4s;
   }
   &__subject {
-    font-family: $secondary-font;
-    font-weight: 800;
-    font-size: 2rem;
+    @include text(2rem, 800, $secondary-font);
     margin-bottom: 10px;
     transition: all linear 0.4s;
   }
 
   &__decs {
-    font-size: 1.6rem;
-    color: $secondary-color;
+    @include text(1.6rem, 500, $secondary-font);
     line-height: 1.6;
   }
   &-bottom {
@@ -83,8 +81,7 @@
       font-size: 6rem;
     }
     &__content {
-      display: flex;
-      align-items: center;
+      @include flexBox(center);
       gap: 25px;
     }
     &-top,

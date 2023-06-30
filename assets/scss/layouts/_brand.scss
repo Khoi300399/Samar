@@ -8,22 +8,39 @@
     padding: 20px 30px;
     width: 160px;
     height: 100px;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
+    border-radius: 0.8rem;
     overflow: hidden;
-    transition: all 1s;
+    transition: all 0.5s;
+
+    &:hover {
+      background-image: $gradient;
+      background-size: 200%;
+    }
+    &:hover .logo-main {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:hover .logo-hover {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   .logo-main,
   .logo-hover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: auto !important;
     border-style: none;
     height: auto;
     max-width: 100%;
     vertical-align: middle;
+    transition: all 0.5s;
   }
   .logo-hover {
-    display: none !important;
+    opacity: 0;
+    visibility: hidden;
   }
 }

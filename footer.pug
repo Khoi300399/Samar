@@ -1,0 +1,49 @@
+footer.footer 
+    div.container
+        div.footer__top
+            div.row.w-100.align-items-center
+                div.col-lg-6
+                    h2.footer__title Subscribe To Our Newsletter
+                div.col-lg-6
+                    form.footer__subscribe
+                        div.form-group
+                            input.form-input(type="email" placeholder="Your Email Address")
+                            button.form-btn
+                                i.las.la-paper-plane.scale4
+    div.container
+        div.footer__body
+            div.footer__content.row
+                div.footer__item.col-xl-3.col-lg-3.col-sm-6
+                    div.footer__meta-header
+                        img(src="./assets/image/logo-white.png", alt="logo")
+                    div.footer__meta
+                        ul.footer__meta-list
+                            li.footer__meta-item
+                                span.meta-icon
+                                    i.fa.fa-phone.gradient
+                                span.meta-text 1800-123-4567 <br> +91 987-654-3210
+                            li.footer__meta-item
+                                span.meta-icon
+                                    i.fa.fa-envelope.gradient 
+                                span.meta-text info@example.com <br> services@gmail.com 
+                            li.footer__meta-item
+                                span.meta-icon
+                                    i.fas.fa-map-marker-alt.gradient 
+                                span.meta-text Demo Address #8901 Marmora Road Chi Minh City, Vietnam                    
+                +footerItem("Our links","Home","About Us","Services","Team","Blog")
+                +footerItem("Our links","Home","About Us","Services","Team","Blog")
+                +footerItem("Our links","Home","About Us","Services","Team","Blog")
+
+    div.footer__bottom
+        div.container
+            div.row.align-items-center
+                div.col-lg-6.col-md-7
+                    p.text-start Copyright © 2023 <span> DexignZone </span>.All rights reserved.
+                div.col-lg-6.col-md-5
+                    ul.contact-list
+                        li
+                            i.fab.fa-facebook-f 
+                        li
+                            i.fab.fa-instagram
+                        li
+                            i.fab.fa-twitter 

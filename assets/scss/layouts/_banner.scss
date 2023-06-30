@@ -14,21 +14,16 @@
   &__item {
     list-style: none;
     padding: 10px 5px 0 0;
-    display: flex;
-    align-items: center;
+    @include flexBox(center);
     gap: 10px;
   }
   &__icon {
-    width: 35px;
-    height: 35px;
-    font-size: 2.4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include text(2.4rem, 500, #fff);
+    @include size(35px);
+    @include flexBox(center, center);
     padding: 10px;
     border-radius: 50%;
     background-image: $gradient-hover;
-    color: white;
   }
   &__text {
     font-size: 1.6rem;
@@ -47,9 +42,7 @@
     position: absolute;
     height: 100%;
     top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox(center, center);
     animation: roteMove 5s infinite;
     img {
       transform: scale(1.4);
@@ -70,7 +63,7 @@
   }
 }
 
-@media only screen and (min-width: 576px) {
+@include minWidth(576px) {
   .banner {
     &-bottom {
       width: 60%;
@@ -81,7 +74,7 @@
   }
 }
 
-@media only screen and (min-width: 767px) and (max-width: 991px) {
+@include bothWidth(768px, 991px) {
   .banner {
     &-top {
       width: 690px;
@@ -89,20 +82,22 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@include minWidth(992px) {
   .banner {
     padding-top: 180px;
     .content {
-      display: flex;
-      align-items: center;
+      @include flexBox(center);
     }
     &-bottom {
       width: 35%;
     }
   }
 }
-@media only screen and (min-width: 1200px) {
+@include minWidth(1200px) {
   .banner {
+    .content {
+      gap: 20px;
+    }
     &-top {
       width: 70%;
     }

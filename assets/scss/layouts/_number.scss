@@ -10,19 +10,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-  &__item {
-    text-align: center;
-  }
+
   &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    @include flexBox(center, center);
     background: $gradient-hover;
-    font-size: 4rem;
+    @include text(4rem, 500, #fff, center);
+    @include size(80px);
     border-radius: 100%;
-    width: 80px;
-    height: 80px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -30,11 +24,10 @@
   &__counter {
     font-family: $secondary-font;
     text-transform: uppercase;
-    font-size: 5rem;
-    color: $hover-color;
-    font-weight: 800;
+    @include text(5rem, 800, $hover-color, center);
   }
   &__statistic {
+    text-align: center;
     font-size: 1.6rem;
   }
 }

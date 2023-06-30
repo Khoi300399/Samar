@@ -5,16 +5,21 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-        //- Bootstrap V4
-        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' integrity='sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N' crossorigin='anonymous')
-
         //-LightGalerry
-        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css')
-        
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-medium-zoom.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-comments.min.css')
+    
+        //- Animate CSS
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+
         //- Owl Carousel 
-        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
-        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css')
-        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css')
+        link(rel='stylesheet' href='/assets/vendor/owlcarousel/assets/owl.carousel.min.css')
+        link(rel='stylesheet' href='/assets/vendor/owlcarousel/assets/owl.theme.default.min.css')
+        link(rel='stylesheet' href='/assets/vendor/owlcarousel/assets/owl.theme.green.min.css')
 
         //- Swiper
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
@@ -32,8 +37,10 @@ html(lang="en")
         //- Font Awesome
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
         link(rel="stylesheet", href="./assets/flaticon/owl.carousel.min.css")
-        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css' integrity='sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==' crossorigin='anonymous' referrerpolicy='no-referrer')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css')
 
+        //- Bootstrap V4
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css' integrity='sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N' crossorigin='anonymous')
 
         //- My CSS
         link(rel="stylesheet", href="./assets/css/style.css")
@@ -41,23 +48,23 @@ html(lang="en")
         title Samar
 
         //- Favicon
-        link(rel='apple-touch-icon' sizes='57x57' href='./assets/favicon/apple-icon-57x57.png')
-        link(rel='apple-touch-icon' sizes='60x60' href='./assets/favicon/apple-icon-60x60.png')
-        link(rel='apple-touch-icon' sizes='72x72' href='./assets/favicon/apple-icon-72x72.png')
-        link(rel='apple-touch-icon' sizes='76x76' href='./assets/favicon/apple-icon-76x76.png')
-        link(rel='apple-touch-icon' sizes='114x114' href='./assets/favicon/apple-icon-114x114.png')
-        link(rel='apple-touch-icon' sizes='120x120' href='./assets/favicon/apple-icon-120x120.png')
-        link(rel='apple-touch-icon' sizes='144x144' href='./assets/favicon/apple-icon-144x144.png')
-        link(rel='apple-touch-icon' sizes='152x152' href='./assets/favicon/apple-icon-152x152.png')
-        link(rel='apple-touch-icon' sizes='180x180' href='./assets/favicon/apple-icon-180x180.png')
-        link(rel='icon' type='image/png' sizes='192x192' href='./assets/favicon/android-icon-192x192.png')
-        link(rel='icon' type='image/png' sizes='32x32' href='./assets/favicon/favicon-32x32.png')
-        link(rel='icon' type='image/png' sizes='96x96' href='./assets/favicon/favicon-96x96.png')
-        link(rel='icon' type='image/png' sizes='16x16' href='./assets/favicon/favicon-16x16.png')
-        link(rel='manifest' href='./assets/favicon/manifest.json')
-        meta(name='msapplication-TileColor' content='#ffffff')
-        meta(name='msapplication-TileImage' content='/ms-icon-144x144.png')
-        meta(name='theme-color' content='#ffffff')
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     body 
 
         include ./header
@@ -71,38 +78,67 @@ html(lang="en")
         include ./testimonial
         include ./blogs
         include ./brand
+        include ./footer
 
+        button.back-to-top#back-to-top 
+            i.fa.fa-arrow-up
 
         //- Jquery
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js' integrity='sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==' crossorigin='anonymous' referrerpolicy='no-referrer')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js' integrity='sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==' crossorigin='anonymous' referrerpolicy='no-referrer')
-        //- BS V4
-        script(src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct' crossorigin='anonymous')
-
-        //- --------------LightGalerry---------------
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js')
+        script(src='/assets/vendor/jquery/jquery.min.js')
+        //- --------------WoW JS---------------
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
         script.
-            lightGallery(document.getElementById('lightgallery'), {
-            plugins: [lgThumbnail, lgZoom, lgFullscreen, lgShare, lgRotate, lgAutoplay],
-            selector : '.lightimg',
-            loop:true,
-            thumbnail:true,
-            exThumbImage: 'data-exthumbimage'
-            
-            });
-
-        //- -------------Counter up-------------------
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js' integrity='sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==' crossorigin='anonymous' referrerpolicy='no-referrer')
+            wow = new WOW(
+                {
+                    boxClass:     'wow',      
+                    animateClass: 'animate__animated', 
+                    offset:       0,          
+                    mobile:       true,       
+                    live:         true        
+                }
+                )
+                wow.init();
+        //- -------------Waypoints JS-------------------
+        script(src='/assets/vendor/waypoints/waypoints.min.js')
+        //- -------------Counter up JS-------------------
+        script(src='./assets/vendor/counterup/jquery.counterup.min.js')
         script.
             jQuery(document).ready(function($) {
             $('.counter').counterUp({
             delay: 10,
-            time: 1000
+            time: 3000
             });
             });
+        
+        //- BS V4
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js')
 
-        //- ---------------Swiper---------------------
+
+        //- --------------LightGallery JS---------------
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/comment/lg-comment.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/mediumZoom/lg-medium-zoom.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/pager/lg-pager.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js')
+        script.
+            lightGallery(document.getElementById("lightgallery"), {
+            selector: ".lightimg",
+            plugins: [lgThumbnail, lgAutoplay],
+            alignThumbnails: "left",
+            loop: true,
+            allowMediaOverlap: true,
+            toggleThumb: true,
+            showZoomInOutIcons: true,
+            actualSize: false,
+            exThumbImage: "data-exthumbimage"
+            });
+        
+
+        
+
+        //- ---------------Swiper JS---------------------
         script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js')
         script.
             var testimonialThumbs = new Swiper(".testimonial__clients", {
@@ -129,7 +165,7 @@ html(lang="en")
             });
 
         //- ---------------Owl Carouse-----------------
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+        script(src='/assets/vendor/owlcarousel/owl.carousel.min.js')
         script.
             $(document).ready(function(){
                 $(".owl-carousel").owlCarousel({
@@ -154,6 +190,8 @@ html(lang="en")
                 });
             });
         script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+        
+        //- ---------------Slick JS-----------------
         script(type='text/javascript').
             $(document).ready(function(){
             $('.your-class').slick({
@@ -187,6 +225,36 @@ html(lang="en")
             }
             ]
             });
+            });
+    
+        //- ---------------Animate Header-----------------
+        script.
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()>0){
+                        $("#header").addClass("header-extra")
+                    }else{
+                        $("#header").removeClass("header-extra")
+                    }
+                });
+            });
+
+        
+        //- ---------------Back to Top-----------------
+        script.
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()>0){
+                        $("#back-to-top").fadeIn();
+                    }else {
+                        $("#back-to-top").fadeOut();
+                    }
+                });
+                $("#back-to-top").click(function(){
+                    $("html , body").animate({
+                        "scrollTop":0,
+                    },1000)
+                });
             });
 
 

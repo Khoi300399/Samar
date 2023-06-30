@@ -1,7 +1,21 @@
 .section {
   padding-top: 50px;
 }
-
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $hover-color;
+  color: white;
+  box-shadow: -4px 4px 24px -10px $hover-color !important;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 99;
+}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .section {
     padding-top: 70px;

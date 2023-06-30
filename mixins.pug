@@ -2,8 +2,8 @@ mixin headingCenter(heading,title)
     h6.heading.heading-center= heading
     h2.title.title-center= title
 mixin heading(heading,title)
-    h6.heading= heading
-    h2.title= title
+    h6.heading.wow.animate__fadeInUp.animate__delay-0.5s(data-wow-delay="0.5s")= heading
+    h2.title.wow.animate__fadeInUp.animate__delay-1s(data-wow-delay="1s")= title
 
 mixin servicesItem(img,title,decs)
     article.services__item 
@@ -17,7 +17,7 @@ mixin numberItem(icon,counter,text,statistic)
         span.number__icon
             i(class= icon)
         div.number__counter
-            span.number__counter--digital.counter= counter
+            span.counter.number__counter--digital= counter
             span.number__counter--text= text 
         p.number__statistic= statistic
 
@@ -31,9 +31,10 @@ mixin featuresItem(icon,subject,decs)
             p.features__decs= decs 
 
 mixin portfolioOverlay(image)
+    div.portfolio__icon
+        a.lightimg(href= "#!", data-exthumbimage= image data-src= image)
+            i.la.la-plus
     div.portfolio__overlay
-    a.portfolio__icon(href= image,data-lg-size="1000-600")
-        i.la.la-plus
     span.portfolio__text
         h5.portfolio__text-title Software Landing
         p.portfolio__text-decs By Jhone Doe
@@ -116,4 +117,24 @@ mixin logoItem(img1,img2)
             img(src= img1, alt="..." class="logo-main")
             img(src= img2, alt="..." class="logo-hover")
 
-
+mixin footerItem(title,l1,l2,l3,l4,l5)
+    div.footer__item.col-xl-3.col-lg-3.col-sm-6
+        div.footer__item-header
+            h2.footer__item-title= title
+        div.footer__item-content
+            ul.footer__item-list 
+                li 
+                    i.fa-solid.fa-angle-right
+                    span= l1 
+                li
+                    i.fa-solid.fa-angle-right 
+                    span= l2
+                li
+                    i.fa-solid.fa-angle-right 
+                    span= l3 
+                li
+                    i.fa-solid.fa-angle-right 
+                    span= l4 
+                li
+                    i.fa-solid.fa-angle-right 
+                    span= l5 

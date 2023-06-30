@@ -1,4 +1,8 @@
 .blogs {
+  background-image: url("/assets/image//bg16.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   &__item {
     border-radius: 8px;
     background: rgba(245, 95, 141, 0.1);
