@@ -12,14 +12,14 @@ mixin servicesItem(img,title,decs)
         h3.services__item--title= title
         p.services__item--decs= decs
 
-mixin numberItem(icon,counter,text,statistic)
+mixin numberItem(data)
     article.number__item 
         span.number__icon
-            i(class= icon)
+            i(class= data.icon)
         div.number__counter
-            span.counter.number__counter--digital= counter
-            span.number__counter--text= text 
-        p.number__statistic= statistic
+            span.number__counter--digital.counter= data.num
+            span.number__counter--text= data.text 
+        p.number__statistic= data.statistic
 
 mixin featuresItem(icon,subject,decs)
     div.features__item

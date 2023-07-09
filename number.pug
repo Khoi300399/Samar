@@ -1,8 +1,28 @@
 section.number
     div.container
         div.number__content
-            +numberItem("flaticon-smile","18"," ml","Satisfied Clients")
-            +numberItem("flaticon-line-chart","20"," ml","Project Completed")
-            +numberItem("flaticon-startup","30"," ml","Project Lunched")
-            +numberItem("flaticon-confetti","50","","Years Completed")
+            +numberItem({
+                icon:"flaticon-smile",
+                num:"18",
+                text:"ML",
+                statistic:"Satisfied Clients",
+            })
+            +numberItem({
+                icon:"flaticon-line-chart",
+                num:"20",
+                text:"ML",
+                statistic:"Project Completed",
+            })
+            +numberItem({
+                icon:"flaticon-startup",
+                num:"30",
+                text:"ML",
+                statistic:"Project Lunched",
+            })
+            +numberItem({
+                icon:"flaticon-confetti",
+                num:"18",
+                statistic:"Years Completed",
+            })
+            
             

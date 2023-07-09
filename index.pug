@@ -17,9 +17,9 @@ html(lang="en")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
 
         //- Owl Carousel 
-        link(rel='stylesheet' href='/assets/vendor/owlcarousel/assets/owl.carousel.min.css')
-        link(rel='stylesheet' href='/assets/vendor/owlcarousel/assets/owl.theme.default.min.css')
-        link(rel='stylesheet' href='/assets/vendor/owlcarousel/assets/owl.theme.green.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css')
 
         //- Swiper
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css")
@@ -84,7 +84,16 @@ html(lang="en")
             i.fa.fa-arrow-up
 
         //- Jquery
-        script(src='/assets/vendor/jquery/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+        //- -------------Waypoints JS-------------------
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')
+        //- -------------Counter up JS-------------------
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js')
+        script.
+            $('.counter').counterUp({
+            delay: 10,
+            time: 3000
+            });
         //- --------------WoW JS---------------
         script(src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js')
         script.
@@ -98,18 +107,6 @@ html(lang="en")
                 }
                 )
                 wow.init();
-        //- -------------Waypoints JS-------------------
-        script(src='/assets/vendor/waypoints/waypoints.min.js')
-        //- -------------Counter up JS-------------------
-        script(src='./assets/vendor/counterup/jquery.counterup.min.js')
-        script.
-            jQuery(document).ready(function($) {
-            $('.counter').counterUp({
-            delay: 10,
-            time: 3000
-            });
-            });
-        
         //- BS V4
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js')
 
@@ -165,7 +162,7 @@ html(lang="en")
             });
 
         //- ---------------Owl Carouse-----------------
-        script(src='/assets/vendor/owlcarousel/owl.carousel.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
         script.
             $(document).ready(function(){
                 $(".owl-carousel").owlCarousel({

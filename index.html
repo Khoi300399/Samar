@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-comments.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="/assets/vendor/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/assets/vendor/owlcarousel/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
@@ -149,19 +149,19 @@
       <div class="container">
         <div class="number__content">
           <article class="number__item"> <span class="number__icon"><i class="flaticon-smile"></i></span>
-            <div class="number__counter"><span class="counter number__counter--digital">18</span><span class="number__counter--text"> ml</span></div>
+            <div class="number__counter"><span class="number__counter--digital counter">18</span><span class="number__counter--text">ML</span></div>
             <p class="number__statistic">Satisfied Clients</p>
           </article>
           <article class="number__item"> <span class="number__icon"><i class="flaticon-line-chart"></i></span>
-            <div class="number__counter"><span class="counter number__counter--digital">20</span><span class="number__counter--text"> ml</span></div>
+            <div class="number__counter"><span class="number__counter--digital counter">20</span><span class="number__counter--text">ML</span></div>
             <p class="number__statistic">Project Completed</p>
           </article>
           <article class="number__item"> <span class="number__icon"><i class="flaticon-startup"></i></span>
-            <div class="number__counter"><span class="counter number__counter--digital">30</span><span class="number__counter--text"> ml</span></div>
+            <div class="number__counter"><span class="number__counter--digital counter">30</span><span class="number__counter--text">ML</span></div>
             <p class="number__statistic">Project Lunched</p>
           </article>
           <article class="number__item"> <span class="number__icon"><i class="flaticon-confetti"></i></span>
-            <div class="number__counter"><span class="counter number__counter--digital">50</span><span class="number__counter--text"></span></div>
+            <div class="number__counter"><span class="number__counter--digital counter">18</span><span class="number__counter--text"></span></div>
             <p class="number__statistic">Years Completed</p>
           </article>
         </div>
@@ -399,7 +399,7 @@
       <div class="container">
         <h6 class="heading heading-center">Our Blog</h6>
         <h2 class="title title-center">Latest News &amp; Blog</h2>
-        <div class="blogs__content owl-carousel">
+        <div class="owl-carousel">
           <article class="blogs__item"> 
             <figure class="blogs__img"> <img src="./assets/image/pic1_1.jpg" alt="..."/></figure>
             <div class="blogs__info">
@@ -563,7 +563,15 @@
       </div>
     </footer>
     <button class="back-to-top" id="back-to-top"> <i class="fa fa-arrow-up"></i></button>
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+      $('.counter').counterUp({
+      delay: 10,
+      time: 3000
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
       wow = new WOW(
@@ -576,17 +584,6 @@
           }
           )
           wow.init();
-    </script>
-    <script src="/assets/vendor/waypoints/waypoints.min.js"></script>
-    <script src="./assets/vendor/counterup/jquery.counterup.min.js"></script>
-    <script>
-      jQuery(document).ready(function($) {
-      $('.counter').counterUp({
-      delay: 10,
-      time: 3000
-      });
-      });
-      
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
@@ -639,7 +636,7 @@
       });
       
     </script>
-    <script src="/assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function(){
           $(".owl-carousel").owlCarousel({
